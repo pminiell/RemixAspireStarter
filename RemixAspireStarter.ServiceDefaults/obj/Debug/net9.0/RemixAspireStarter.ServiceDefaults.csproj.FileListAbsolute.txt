@@ -1,0 +1,12 @@
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/bin/Debug/net9.0/RemixAspireStarter.ServiceDefaults.deps.json
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/bin/Debug/net9.0/RemixAspireStarter.ServiceDefaults.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/bin/Debug/net9.0/RemixAspireStarter.ServiceDefaults.pdb
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.csproj.AssemblyReference.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.AssemblyInfoInputs.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.AssemblyInfo.cs
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.csproj.CoreCompileInputs.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/refint/RemixAspireStarter.ServiceDefaults.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.pdb
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/ref/RemixAspireStarter.ServiceDefaults.dll

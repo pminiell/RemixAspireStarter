@@ -1,0 +1,12 @@
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/bin/Debug/net9.0/RemixAspireStarter.Data.deps.json
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/bin/Debug/net9.0/RemixAspireStarter.Data.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/bin/Debug/net9.0/RemixAspireStarter.Data.pdb
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.csproj.AssemblyReference.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.AssemblyInfoInputs.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.AssemblyInfo.cs
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.csproj.CoreCompileInputs.cache
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/refint/RemixAspireStarter.Data.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.pdb
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/ref/RemixAspireStarter.Data.dll

@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj": {}
+  },
+  "projects": {
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj",
+        "projectName": "RemixAspireStarter.AppHost",
+        "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj",
+        "packagesPath": "/home/pminiell/.nuget/packages/",
+        "outputPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/pminiell/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Aspire.Dashboard.Sdk.linux-x64": {
+              "target": "Package",
+              "version": "[9.5.2, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
+            "Aspire.Hosting.Orchestration.linux-x64": {
+              "target": "Package",
+              "version": "[9.5.2, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/pminiell/.local/share/mise/installs/dotnet/9.0.306/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/RemixAspireStarter.API.csproj": {}
+  },
+  "projects": {
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/RemixAspireStarter.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/RemixAspireStarter.API.csproj",
+        "projectName": "RemixAspireStarter.API",
+        "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/RemixAspireStarter.API.csproj",
+        "packagesPath": "/home/pminiell/.nuget/packages/",
+        "outputPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/pminiell/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/RemixAspireStarter.Data.csproj": {
+                "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/RemixAspireStarter.Data.csproj"
+              },
+              "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj": {
+                "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "ForEvolve.FluentValidation.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[1.0.26, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/pminiell/.local/share/mise/installs/dotnet/9.0.306/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/RemixAspireStarter.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/RemixAspireStarter.Data.csproj",
+        "projectName": "RemixAspireStarter.Data",
+        "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/RemixAspireStarter.Data.csproj",
+        "packagesPath": "/home/pminiell/.nuget/packages/",
+        "outputPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/pminiell/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/pminiell/.local/share/mise/installs/dotnet/9.0.306/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj",
+        "projectName": "RemixAspireStarter.ServiceDefaults",
+        "projectPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj",
+        "packagesPath": "/home/pminiell/.nuget/packages/",
+        "outputPath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/pminiell/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Http.Resilience": {
+              "target": "Package",
+              "version": "[9.9.0, )"
+            },
+            "Microsoft.Extensions.ServiceDiscovery": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/pminiell/.local/share/mise/installs/dotnet/9.0.306/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
