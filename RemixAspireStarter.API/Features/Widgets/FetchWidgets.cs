@@ -1,41 +1,28 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RemixAspireStarter.Data;
+using MediatR;
 
-namespace RemixAspireStarter.API.Features;
+namespace RemixAspireStarter.API.Features.Widgets;
 
-public partial class Widgets
+
+public class FetchWidgets
 {
-  public partial class FetchWidgets
-  {
-    public record class Response(int Id, string Name, int Quantity);
 
-    public class Handler
+  public record class Query : IRequest<IEnumerable<Result>>;
+  public record class Result(int Id, string Name, int Quantity);
+
+  public class Handler : IRequestHandler<Query, IEnumerable<Result>>
+  {
+    private readonly ApplicationDbContext _db;
+
+    public Handler(ApplicationDbContext db)
     {
-      private readonly ApplicationDbContext _db;
-
-      public Handler(ApplicationDbContext db)
-      {
-        _db = db;
-      }
-      public async Task<IEnumerable<Response>> HandleAsync(CancellationToken cancellationToken)
-      {
-        var widgets = await _db.Widgets.ToListAsync(cancellationToken);
-        return widgets.Select(w => new Response(w.Id, w.Name, w.Quantity));
-      }
+      _db = db;
     }
-  }
-  public static IServiceCollection AddFetchWidgets(this IServiceCollection services)
-  {
-    return services.AddScoped<FetchWidgets.Handler>();
-  }
-  public static IEndpointRouteBuilder MapFetchWidgets(this IEndpointRouteBuilder endpoints)
-  {
-    endpoints.MapGet("/", async ([FromServices] FetchWidgets.Handler handler, CancellationToken cancellationToken) =>
-        {
-          var result = await handler.HandleAsync(cancellationToken);
-          return TypedResults.Ok(result);
-        });
-    return endpoints;
+    public async Task<IEnumerable<Result>> Handle(Query query, CancellationToken cancellationToken)
+    {
+      var widgets = await _db.Widgets.ToListAsync(cancellationToken);
+      return widgets.Select(w => new Result(w.Id, w.Name, w.Quantity));
+    }
   }
 }

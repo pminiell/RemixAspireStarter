@@ -1,60 +1,45 @@
 using FluentValidation;
-using Microsoft.AspNetCore.Mvc;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using RemixAspireStarter.Data;
 using RemixAspireStarter.Data.Models;
 
-namespace RemixAspireStarter.API.Features;
+namespace RemixAspireStarter.API.Features.Widgets;
 
-public partial class Widgets
+public class DeleteWidget
 {
-  public partial class DeleteWidget
+  public record class Command(int Id) : IRequest<Result>;
+
+  public record class Result(int Id, DateTime DeletedAt);
+
+  public class Validator : AbstractValidator<Command>
   {
-    public record class Command(int Id);
-
-    public record class Response(int Id, DateTime DeletedAt);
-
-    public class Validator : AbstractValidator<Command>
+    public Validator()
     {
-      public Validator()
-      {
-        RuleFor(x => x.Id).GreaterThan(0);
-      }
-    }
-
-    public class Handler
-    {
-      private readonly ApplicationDbContext _db;
-
-      public Handler(ApplicationDbContext db)
-      {
-        _db = db;
-      }
-      public async Task<Response> HandleAsync(Command command, CancellationToken cancellationToken)
-      {
-        var widgetsExist = await _db.Widgets.AnyAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
-        if (!widgetsExist)
-        {
-          throw new Exception($"Cannot delete, the widget could not be found:{command.Id}");
-        }
-        Widget widgetToDelete = await _db.Widgets.FirstAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
-        _db.Widgets.Remove(widgetToDelete);
-        await _db.SaveChangesAsync(cancellationToken);
-        return new Response(widgetToDelete.Id, DateTime.UtcNow);
-      }
+      RuleFor(x => x.Id).GreaterThan(0);
     }
   }
-  public static IServiceCollection AddDeleteWidget(this IServiceCollection services)
+
+  public class Handler : IRequestHandler<Command, Result>
   {
-    return services.AddScoped<CreateWidget.Handler>();
-  }
-  public static IEndpointRouteBuilder MapDeleteWidget(this IEndpointRouteBuilder endpoints)
-  {
-    endpoints.MapDelete("/delete/", async ([FromBody] DeleteWidget.Command command, [FromServices] DeleteWidget.Handler handler, CancellationToken cancellationToken) =>
+    private readonly ApplicationDbContext _db;
+
+    public Handler(ApplicationDbContext db)
     {
-      var result = await handler.HandleAsync(command, cancellationToken);
-      return TypedResults.Ok(result);
-    });
-    return endpoints;
+      _db = db;
+    }
+    public async Task<Result> Handle(Command command, CancellationToken cancellationToken)
+    {
+      var widgetsExist = await _db.Widgets.AnyAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
+      if (!widgetsExist)
+      {
+        throw new Exception($"Cannot delete, the widget could not be found:{command.Id}");
+      }
+      Widget widgetToDelete = await _db.Widgets.FirstAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
+      _db.Widgets.Remove(widgetToDelete);
+      await _db.SaveChangesAsync(cancellationToken);
+      return new Result(widgetToDelete.Id, DateTime.UtcNow);
+    }
   }
 }
+

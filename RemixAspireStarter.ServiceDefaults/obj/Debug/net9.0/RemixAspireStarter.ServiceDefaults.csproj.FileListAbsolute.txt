@@ -10,3 +10,4 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/refint/RemixAspireStarter.ServiceDefaults.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.pdb
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/ref/RemixAspireStarter.ServiceDefaults.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.ServiceDefaults/obj/Debug/net9.0/RemixAspireStarter.ServiceDefaults.sourcelink.json

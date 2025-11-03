@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4d92f516-a95f-4564-a3cb-4d167cff7bc4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+129ea560dae911636934ad1e2122b78e4aa9bc99")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

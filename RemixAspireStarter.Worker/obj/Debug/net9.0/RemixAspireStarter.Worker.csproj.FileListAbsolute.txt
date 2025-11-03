@@ -148,3 +148,4 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Worker/obj/Debug/net9.0/RemixAspireStarter.Worker.pdb
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Worker/obj/Debug/net9.0/RemixAspireStarter.Worker.genruntimeconfig.cache
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Worker/obj/Debug/net9.0/ref/RemixAspireStarter.Worker.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Worker/obj/Debug/net9.0/RemixAspireStarter.Worker.sourcelink.json

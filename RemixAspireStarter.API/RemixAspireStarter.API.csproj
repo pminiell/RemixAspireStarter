@@ -1,12 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4d92f516-a95f-4564-a3cb-4d167cff7bc4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.1.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
     <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.5.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
@@ -15,12 +18,11 @@
     </PackageReference>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
     <PackageReference Include="ForEvolve.FluentValidation.AspNetCore.Http" Version="1.0.26" /> 
-    <PackageReference Include="Riok.Mapperly" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../RemixAspireStarter.Data/RemixAspireStarter.Data.csproj"/>
-    <ProjectReference Include="../RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj"/>
+    <ProjectReference Include="../RemixAspireStarter.Data/RemixAspireStarter.Data.csproj" />
+    <ProjectReference Include="../RemixAspireStarter.ServiceDefaults/RemixAspireStarter.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

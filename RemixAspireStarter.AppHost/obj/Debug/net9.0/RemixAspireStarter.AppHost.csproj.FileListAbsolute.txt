@@ -133,3 +133,4 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net9.0/RemixAspireStarter.AppHost.genruntimeconfig.cache
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net9.0/ref/RemixAspireStarter.AppHost.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net9.0/Aspire/references/RemixAspireStarter_API.ProjectMetadata.g.cs
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net9.0/RemixAspireStarter.AppHost.sourcelink.json

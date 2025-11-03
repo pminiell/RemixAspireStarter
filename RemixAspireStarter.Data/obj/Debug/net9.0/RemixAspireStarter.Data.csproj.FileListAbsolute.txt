@@ -10,3 +10,4 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/refint/RemixAspireStarter.Data.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.pdb
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/ref/RemixAspireStarter.Data.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Data/obj/Debug/net9.0/RemixAspireStarter.Data.sourcelink.json

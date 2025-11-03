@@ -1,73 +1,64 @@
+using AutoMapper;
 using FluentValidation;
-using Microsoft.AspNetCore.Mvc;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using RemixAspireStarter.Data;
 using RemixAspireStarter.Data.Models;
-using Riok.Mapperly.Abstractions;
 
-namespace RemixAspireStarter.API.Features;
+namespace RemixAspireStarter.API.Features.Widgets;
 
-public partial class Widgets
+public class CreateWidget
 {
-  public partial class CreateWidget
+  public record class Command(int Id, string Name, int Quantity) : IRequest<Result>;
+
+  public record class Result(int Id, string Name, int Quantity);
+
+
+  public class MapperProfile : Profile
   {
-    public record class Command(int Id, string Name, int Quantity);
 
-    public record class Response(int Id, string Name, int Quantity);
-
-    [Mapper]
-    public partial class Mapper
+    public MapperProfile()
     {
-      public partial Widget Map(Command command);
-      public partial Response Map(Widget widget);
-    }
-
-    public class Validator : AbstractValidator<Command>
-    {
-      public Validator()
-      {
-        RuleFor(x => x.Id).GreaterThan(0);
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
-        RuleFor(x => x.Quantity).GreaterThan(0);
-      }
-    }
-
-    public class Handler
-    {
-      private readonly ApplicationDbContext _db;
-      private readonly Mapper _mapper;
-
-      public Handler(ApplicationDbContext db, Mapper mapper)
-      {
-        _db = db;
-        _mapper = mapper;
-      }
-      public async Task<Response> HandleAsync(Command command, CancellationToken cancellationToken)
-      {
-        var widgetsExist = await _db.Widgets.AnyAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
-        if (widgetsExist)
-        {
-          throw new Exception($"The widget already exists :{command.Id}");
-        }
-        Widget newWidget = _mapper.Map(command);
-        _db.Widgets.Add(newWidget);
-        await _db.SaveChangesAsync(cancellationToken);
-        return _mapper.Map(newWidget);
-      }
+      CreateMap<Command, Widget>();
+      CreateMap<Widget, Result>();
     }
   }
-  public static IServiceCollection AddCreateWidget(this IServiceCollection services)
+
+  public class Validator : AbstractValidator<Command>
   {
-    return services.AddScoped<CreateWidget.Handler>().AddSingleton<CreateWidget.Mapper>();
+    public Validator()
+    {
+      RuleFor(x => x.Id).GreaterThan(0);
+      RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
+      RuleFor(x => x.Quantity).GreaterThan(0);
+    }
   }
-  public static IEndpointRouteBuilder MapCreateWidget(this IEndpointRouteBuilder endpoints)
+
+  public class Handler : IRequestHandler<Command, Result>
   {
 
-    endpoints.MapPost("/create", async ([FromBody] CreateWidget.Command command, [FromServices] CreateWidget.Handler handler, CancellationToken cancellationToken) =>
-        {
-          var result = await handler.HandleAsync(command, cancellationToken);
-          return TypedResults.Created($"/widgets/{result.Id}", result);
-        });
-    return endpoints;
+    private readonly ApplicationDbContext _db;
+    private readonly IMapper _mapper;
+
+    public Handler(ApplicationDbContext db, IMapper mapper)
+    {
+      _db = db;
+      _mapper = mapper;
+    }
+
+    public async Task<Result> Handle(Command command, CancellationToken cancellationToken = default)
+    {
+
+      var widgetsExist = await _db.Widgets.AnyAsync(w => w.Id == command.Id, cancellationToken: cancellationToken);
+      if (widgetsExist)
+      {
+        throw new Exception($"The widget already exists :{command.Id}");
+      }
+      Widget newWidget = _mapper.Map<Widget>(command);
+      _db.Widgets.Add(newWidget);
+      await _db.SaveChangesAsync(cancellationToken);
+      return _mapper.Map<Result>(newWidget);
+    }
   }
 }
+

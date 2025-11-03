@@ -173,4 +173,11 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/FluentValidation.AspNetCore.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/FluentValidation.AspNetCore.Http.dll
-/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/Riok.Mapperly.Abstractions.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/AutoMapper.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/MediatR.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/MediatR.Contracts.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.API/obj/Debug/net9.0/RemixAspireStarter.API.sourcelink.json
