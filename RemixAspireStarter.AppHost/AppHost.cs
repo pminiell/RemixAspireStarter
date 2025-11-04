@@ -2,6 +2,7 @@ using Projects;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
+//change db name to application appropriate name
 var database = builder.AddPostgres("postgres").WithDataVolume().AddDatabase("AppDb", "table");
 
 var worker = builder.AddProject<RemixAspireStarter_Worker>("remixaspirestarter-worker")
