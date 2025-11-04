@@ -2,13 +2,29 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router'
 import { getWidgetsAsync } from './WidgetClient.ts'
-import App from './App.tsx'
+import WidgetList from './Components/WidgetList.tsx'
+import MainLayout from './Layouts/MainLayout.tsx'
+import Counter from './Components/Counter.tsx'
+import Home from './Components/Home.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    loader: getWidgetsAsync,
-    Component: App
+    Component: MainLayout,
+    children: [
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: 'widgets',
+        Component: WidgetList,
+        loader: getWidgetsAsync,
+      },
+      {
+        path: 'counter',
+        Component: Counter
+      }
+    ],
   }
 ])
 

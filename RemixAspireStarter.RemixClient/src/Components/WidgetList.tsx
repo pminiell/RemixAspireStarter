@@ -1,7 +1,8 @@
-import { useLoaderData } from "react-router"
-import type { WidgetSummary } from "./Models/WidgetSummary";
+import { useLoaderData } from "react-router";
+import type { WidgetSummary } from "../Models/WidgetSummary";
 
-function App() {
+export default function WidgetList() {
+
   let widgets: WidgetSummary[] = useLoaderData();
 
   return (
@@ -20,8 +21,5 @@ function App() {
           </li>
         ))}
       </ul>
-    </div>
-  )
+    </div>)
 }
-
-export default App
