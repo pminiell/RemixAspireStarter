@@ -2,7 +2,7 @@ import type { WidgetSummary } from './Models/WidgetSummary';
 
 
 export async function getWidgetsAsync(): Promise<WidgetSummary[]> {
-  const response = await fetch("api/widgets");
+  const response = await fetch("/widgets");
 
   if (!response.ok) {
     throw new Error(`Error fetching widgets: ${response.statusText}`);

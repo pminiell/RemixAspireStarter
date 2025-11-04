@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api': {
-        target: 'https://localhost:7005/api/',
+      '/widgets': {
+        target: `${process.env['services__remixaspirestarter-api__https__0']}/api`,
         rewrite: (path) => path.replace(/^\/api/, ''),
         changeOrigin: true,
         secure: false,
@@ -15,3 +16,5 @@ export default defineConfig({
     }
   }
 })
+
+

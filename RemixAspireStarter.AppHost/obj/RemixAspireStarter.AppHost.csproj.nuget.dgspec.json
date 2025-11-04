@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[9.5.2, )"
             },
+            "Aspire.Hosting.NodeJs": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
             "Aspire.Hosting.Orchestration.linux-x64": {
               "target": "Package",
               "version": "[9.5.2, )",

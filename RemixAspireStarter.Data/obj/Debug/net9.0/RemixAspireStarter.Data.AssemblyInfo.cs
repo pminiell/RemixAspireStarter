@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemixAspireStarter.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a56fdaedae36a1f3aa4b89c77f368bf8b4c9e367")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c0462e8d1e45a4d4fa4fc7807a0b5ac521e25cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemixAspireStarter.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemixAspireStarter.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

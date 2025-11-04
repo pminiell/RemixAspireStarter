@@ -10,6 +10,7 @@
         "dependencies": {
           "Aspire.Dashboard.Sdk.linux-x64": "9.5.2",
           "Aspire.Hosting.AppHost": "9.5.2",
+          "Aspire.Hosting.NodeJs": "9.5.2",
           "Aspire.Hosting.Orchestration.linux-x64": "9.5.2",
           "Aspire.Hosting.PostgreSQL": "9.5.2"
         },
@@ -121,6 +122,40 @@
         },
         "runtime": {
           "lib/net9.0/Aspire.Hosting.AppHost.dll": {
+            "assemblyVersion": "9.5.2.0",
+            "fileVersion": "9.500.225.52203"
+          }
+        }
+      },
+      "Aspire.Hosting.NodeJs/9.5.2": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.Uris": "9.0.0",
+          "Aspire.Hosting": "9.5.2",
+          "Google.Protobuf": "3.32.0",
+          "Grpc.AspNetCore": "2.71.0",
+          "Grpc.Net.ClientFactory": "2.71.0",
+          "Grpc.Tools": "2.72.0",
+          "Humanizer.Core": "2.14.1",
+          "JsonPatch.Net": "3.3.0",
+          "KubernetesClient": "17.0.14",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.9",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.9",
+          "Microsoft.Extensions.Hosting": "9.0.9",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Http": "9.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Options": "9.0.9",
+          "Microsoft.Extensions.Primitives": "9.0.9",
+          "Newtonsoft.Json": "13.0.3",
+          "Polly.Core": "8.6.3",
+          "Semver": "3.0.0",
+          "StreamJsonRpc": "2.22.11",
+          "System.IO.Hashing": "9.0.8"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.NodeJs.dll": {
             "assemblyVersion": "9.5.2.0",
             "fileVersion": "9.500.225.52203"
           }
@@ -1028,6 +1063,13 @@
       "sha512": "sha512-CYdaa2TkgkF6Vs8f+mkp/2XYqac1EbXkP/eXzF2hX8D4dOJKKNUtdEI7gjHW718ocaodcqs7k7qvjpkeT+6zSQ==",
       "path": "aspire.hosting.apphost/9.5.2",
       "hashPath": "aspire.hosting.apphost.9.5.2.nupkg.sha512"
+    },
+    "Aspire.Hosting.NodeJs/9.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VCoWkWBwsBJGgWdoaL8bMM/KLtmVMizGGLy3XvrqqFAa1yTG+Rk7LD4AKv3fz0Lcms4/Qy6/SN49zTz73fVUlw==",
+      "path": "aspire.hosting.nodejs/9.5.2",
+      "hashPath": "aspire.hosting.nodejs.9.5.2.nupkg.sha512"
     },
     "Aspire.Hosting.Orchestration.linux-x64/9.5.2": {
       "type": "package",

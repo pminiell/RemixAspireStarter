@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ryeq86TFvQk=",
+  "dgSpecHash": "jWnZDDq9T5Q=",
   "success": true,
   "projectFilePath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj",
   "expectedPackageFiles": [
     "/home/pminiell/.nuget/packages/aspire.dashboard.sdk.linux-x64/9.5.2/aspire.dashboard.sdk.linux-x64.9.5.2.nupkg.sha512",
     "/home/pminiell/.nuget/packages/aspire.hosting/9.5.2/aspire.hosting.9.5.2.nupkg.sha512",
     "/home/pminiell/.nuget/packages/aspire.hosting.apphost/9.5.2/aspire.hosting.apphost.9.5.2.nupkg.sha512",
+    "/home/pminiell/.nuget/packages/aspire.hosting.nodejs/9.5.2/aspire.hosting.nodejs.9.5.2.nupkg.sha512",
     "/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/9.5.2/aspire.hosting.orchestration.linux-x64.9.5.2.nupkg.sha512",
     "/home/pminiell/.nuget/packages/aspire.hosting.postgresql/9.5.2/aspire.hosting.postgresql.9.5.2.nupkg.sha512",
     "/home/pminiell/.nuget/packages/aspnetcore.healthchecks.npgsql/9.0.0/aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
