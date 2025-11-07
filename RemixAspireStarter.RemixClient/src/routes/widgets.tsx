@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router";
-import type { WidgetSummary } from "../Models/WidgetSummary";
+import type { WidgetSummary } from "../models/WidgetSummary";
 
-export default function WidgetList() {
+export default function Widgets() {
 
   let widgets: WidgetSummary[] = useLoaderData();
 

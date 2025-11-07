@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemixAspireStarter.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f38204750cbd539aa9d7ed15852e3a90b967c3f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e92fab775fa0550c227311a63df1c31adbd558b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemixAspireStarter.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemixAspireStarter.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

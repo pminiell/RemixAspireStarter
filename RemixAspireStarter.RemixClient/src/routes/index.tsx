@@ -1,4 +1,4 @@
-function Home() {
+function Index() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-6">
       <div className="bg-white shadow-md rounded-lg p-8 max-w-2xl text-center">
@@ -21,5 +21,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;
 

@@ -1,4 +1,4 @@
-import type { WidgetSummary } from './Models/WidgetSummary';
+import type { WidgetSummary } from './models/WidgetSummary';
 
 
 export async function getWidgetsAsync(): Promise<WidgetSummary[]> {
