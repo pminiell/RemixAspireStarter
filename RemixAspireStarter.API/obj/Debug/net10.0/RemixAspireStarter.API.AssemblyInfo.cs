@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78e3077ea1ad12b951e06a50ae54271169144e5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a32c618ecf46d54f28f55edbdc3e38d9c10ac68f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemixAspireStarter.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

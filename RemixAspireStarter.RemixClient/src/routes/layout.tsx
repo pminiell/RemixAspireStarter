@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router";
 
-function Layout() {
+function NavLayout() {
   return (
 
     <div className="min-h-screen flex flex-col bg-gray-100">
@@ -40,4 +40,4 @@ function Layout() {
     </div>)
 }
 
-export default Layout;
+export default NavLayout;

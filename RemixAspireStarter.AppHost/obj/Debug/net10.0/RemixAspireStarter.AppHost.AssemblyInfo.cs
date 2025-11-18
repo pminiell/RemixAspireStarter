@@ -11,21 +11,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4d92f516-a95f-4564-a3cb-4d167cff7bc4")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/9.5.2/tools" +
-    "/dcp"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/9.5.2/tools" +
-    "/ext/"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/9.5.2/tools" +
-    "/ext/bin/"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/13.0.0/tool" +
+    "s/dcp"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/13.0.0/tool" +
+    "s/ext/"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", ("/home/pminiell/.nuget/packages/aspire.hosting.orchestration.linux-x64/13.0.0/tool" +
+    "s/ext/bin/"))]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "RemixAspireStarter.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("/home/pminiell/.nuget/packages/aspire.dashboard.sdk.linux-x64/9.5.2/tools/Aspire." +
-    "Dashboard"))]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("/home/pminiell/.nuget/packages/aspire.dashboard.sdk.linux-x64/13.0.0/tools/Aspire" +
+    ".Dashboard"))]
 [assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemixAspireStarter.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78e3077ea1ad12b951e06a50ae54271169144e5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a32c618ecf46d54f28f55edbdc3e38d9c10ac68f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemixAspireStarter.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemixAspireStarter.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
