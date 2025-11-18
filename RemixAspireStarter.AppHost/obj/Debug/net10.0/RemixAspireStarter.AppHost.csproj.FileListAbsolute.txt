@@ -87,7 +87,6 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/bin/Debug/net10.0/tr/StreamJsonRpc.resources.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/bin/Debug/net10.0/zh-Hans/StreamJsonRpc.resources.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/bin/Debug/net10.0/zh-Hant/StreamJsonRpc.resources.dll
-/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/RemixAspireStarter.AppHost.csproj.AssemblyReference.cache
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/RemixAspireStarter.AppHost.GeneratedMSBuildEditorConfig.editorconfig
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/RemixAspireStarter.AppHost.AssemblyInfoInputs.cache
@@ -103,3 +102,4 @@
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/RemixAspireStarter.AppHost.pdb
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/RemixAspireStarter.AppHost.genruntimeconfig.cache
 /home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/obj/Debug/net10.0/ref/RemixAspireStarter.AppHost.dll
+/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/bin/Debug/net10.0/runtimes/win/lib/net10.0/System.Diagnostics.EventLog.Messages.dll

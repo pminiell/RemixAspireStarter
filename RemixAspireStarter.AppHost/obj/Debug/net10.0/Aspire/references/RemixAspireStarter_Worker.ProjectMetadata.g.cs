@@ -16,4 +16,13 @@ public class RemixAspireStarter_Worker : global::Aspire.Hosting.IProjectMetadata
     /// The path to the RemixAspireStarter_Worker project.
     /// </summary>
     public string ProjectPath => """/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.Worker/RemixAspireStarter.Worker.csproj""";
+
+    /// <summary>
+    /// Gets a value indicating whether building the project before running it should be suppressed.
+    /// </summary>
+    /// <remarks>
+    /// Projects added via ProjectReference items in the AppHost project file are built as part of building the AppHost project process
+    /// so building them again before running is unnecessary. This property always returns true.
+    /// </remarks>
+    public bool SuppressBuild => true;
 }
