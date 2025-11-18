@@ -22,6 +22,8 @@ export const links: Route.LinksFunction = () => {
   ];
 };
 
+
+// read more about this file https://reactrouter.com/api/framework-conventions/root.tsx#roottsx
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -40,7 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function Root() {
+export default function App() {
   return <Outlet />;
 }
 
