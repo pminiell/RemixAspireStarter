@@ -1,4 +1,12 @@
 import { useState } from "react";
+import type { Route } from "../../.react-router/types/src/routes/+types/counter";
+
+export const meta: Route.MetaFunction = () => {
+  return [
+    { title: "Counter - Remix Aspire Starter" },
+    { name: "description", content: "Interactive counter demonstration" },
+  ];
+};
 
 function Counter() {
   const [count, setCount] = useState(0);

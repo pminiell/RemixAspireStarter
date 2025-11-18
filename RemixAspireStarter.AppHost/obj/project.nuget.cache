@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jWnZDDq9T5Q=",
+  "dgSpecHash": "QTRYLGQB7YY=",
   "success": true,
   "projectFilePath": "/home/pminiell/Projects/dotNet/RemixAspireStarter/RemixAspireStarter.AppHost/RemixAspireStarter.AppHost.csproj",
   "expectedPackageFiles": [
@@ -70,7 +70,6 @@
     "/home/pminiell/.nuget/packages/streamjsonrpc/2.22.11/streamjsonrpc.2.22.11.nupkg.sha512",
     "/home/pminiell/.nuget/packages/system.diagnostics.eventlog/9.0.9/system.diagnostics.eventlog.9.0.9.nupkg.sha512",
     "/home/pminiell/.nuget/packages/system.io.hashing/9.0.8/system.io.hashing.9.0.8.nupkg.sha512",
-    "/home/pminiell/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/pminiell/.nuget/packages/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg.sha512"
   ],
   "logs": []

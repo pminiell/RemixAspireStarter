@@ -9,7 +9,7 @@ public static class WidgetsEndpoints
 {
   public static void MapWidgetsEndpoints(this IEndpointRouteBuilder app)
   {
-    app.MapGet("/api/widgets", async (IMediator mediator, CancellationToken cancellationToken) =>
+    app.MapGet("/widgets", async (IMediator mediator, CancellationToken cancellationToken) =>
     {
       var query = new FetchWidgets.Query();
       var result = await mediator.Send(query, cancellationToken);
@@ -18,15 +18,15 @@ public static class WidgetsEndpoints
     .WithName("FetchWidgets")
     .WithOpenApi(); // Optional: Adds OpenAPI metadata if using Swagger
 
-    app.MapPost("/api/widgets", async (IMediator mediator, CreateWidget.Command command, CancellationToken cancellationToken) =>
+    app.MapPost("/widgets", async (IMediator mediator, CreateWidget.Command command, CancellationToken cancellationToken) =>
     {
       var result = await mediator.Send(command, cancellationToken);
-      return Results.Created($"/api/widgets/{result.Id}", result);
+      return Results.Created($"/widgets/{result.Id}", result);
     })
     .WithName("CreateWidget")
     .WithOpenApi();
 
-    app.MapPut("/api/widgets", async (IMediator mediator, UpdateWidget.Command command, CancellationToken cancellationToken) =>
+    app.MapPut("/widgets", async (IMediator mediator, UpdateWidget.Command command, CancellationToken cancellationToken) =>
     {
       var result = await mediator.Send(command, cancellationToken);
       return Results.Ok(result);
@@ -34,7 +34,7 @@ public static class WidgetsEndpoints
     .WithName("UpdateWidget")
     .WithOpenApi();
 
-    app.MapDelete("/api/widgets/{id:int}", async (IMediator mediator, int id, CancellationToken cancellationToken) =>
+    app.MapDelete("/widgets/{id:int}", async (IMediator mediator, int id, CancellationToken cancellationToken) =>
     {
       var command = new DeleteWidget.Command(id);
       var result = await mediator.Send(command, cancellationToken);

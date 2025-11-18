@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: process.env['services__remixaspirestarter-api__http__o'],
+        target: process.env['services__remixaspirestarter-api__http__0'],
         rewrite: (path) => path.replace(/^\/api/, ''),
         changeOrigin: true,
         secure: false,

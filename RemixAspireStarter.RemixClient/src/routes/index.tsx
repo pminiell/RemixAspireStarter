@@ -1,3 +1,12 @@
+import type { Route } from "../../.react-router/types/src/routes/+types/index";
+
+export const meta: Route.MetaFunction = () => {
+  return [
+    { title: "Home - Remix Aspire Starter" },
+    { name: "description", content: "Welcome to the Remix Aspire Starter application" },
+  ];
+};
+
 function Index() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-6">
