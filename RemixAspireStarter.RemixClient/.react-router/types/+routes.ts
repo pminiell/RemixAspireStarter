@@ -17,6 +17,14 @@ type Pages = {
   "/widgets": {
     params: {};
   };
+  "/widgets/:id": {
+    params: {
+      "id": string;
+    };
+  };
+  "/widgets/new": {
+    params: {};
+  };
   "/counter": {
     params: {};
   };
@@ -25,11 +33,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/widgets" | "/counter";
+    page: "/" | "/widgets" | "/widgets/:id" | "/widgets/new" | "/counter";
   };
   "./routes/layout.tsx": {
     id: "routes/layout";
-    page: "/" | "/widgets" | "/counter";
+    page: "/" | "/widgets" | "/widgets/:id" | "/widgets/new" | "/counter";
   };
   "./routes/index.tsx": {
     id: "routes/index";
@@ -38,6 +46,14 @@ type RouteFiles = {
   "./routes/widgets.tsx": {
     id: "routes/widgets";
     page: "/widgets";
+  };
+  "./routes/widgets/widget.tsx": {
+    id: "routes/widgets/widget";
+    page: "/widgets/:id";
+  };
+  "./routes/widgets/newWidget.tsx": {
+    id: "routes/widgets/newWidget";
+    page: "/widgets/new";
   };
   "./routes/counter.tsx": {
     id: "routes/counter";
@@ -50,5 +66,7 @@ type RouteModules = {
   "routes/layout": typeof import("./src/./routes/layout.tsx");
   "routes/index": typeof import("./src/./routes/index.tsx");
   "routes/widgets": typeof import("./src/./routes/widgets.tsx");
+  "routes/widgets/widget": typeof import("./src/./routes/widgets/widget.tsx");
+  "routes/widgets/newWidget": typeof import("./src/./routes/widgets/newWidget.tsx");
   "routes/counter": typeof import("./src/./routes/counter.tsx");
 };

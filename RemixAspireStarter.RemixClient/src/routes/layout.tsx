@@ -15,8 +15,7 @@ function NavLayout() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/widgets" className="hover:underline">
-                Widgets
+              <NavLink to="/widgets" className="hover:underline"> Widgets
               </NavLink>
             </li>
             <li>

@@ -21,7 +21,7 @@ public class FetchWidgets
     }
     public async Task<IEnumerable<Result>> Handle(Query query, CancellationToken cancellationToken)
     {
-      var widgets = await _db.Widgets.ToListAsync(cancellationToken);
+      var widgets = await _db.Widgets.OrderBy(w => w.Id).ToListAsync(cancellationToken);
       return widgets.Select(w => new Result(w.Id, w.Name, w.Quantity));
     }
   }

@@ -43,5 +43,14 @@ public static class WidgetsEndpoints
     .WithName("DeleteWidget")
     .WithOpenApi();
 
+    app.MapGet("/widgets/{id:int}", async (IMediator mediator, int id, CancellationToken cancellationToken) =>
+    {
+      var query = new FetchWidgetById.Query(id);
+      var result = await mediator.Send(query, cancellationToken);
+      return Results.Ok(result);
+    })
+    .WithName("FetchWidgetById")
+    .WithOpenApi();
+
   }
 }
